@@ -6,16 +6,16 @@ public class Launcher {
         System.out.println("Bienvenue");
         Scanner scanner = new Scanner(System.in);
 
-        String entree = scanner.nextLine();
-        if (entree.equals("quit"))
-        {
-            return;
+        while (scanner.hasNext()) {
+            String entree = scanner.nextLine();
+            if (entree.equals("quit"))
+            {
+                return;
+            }
+            else
+            {
+                System.out.println("Unknown command");
+            }
         }
-        else
-        {
-            System.out.println("Unknown command");
-            return;
-        }
-
     }
 }
